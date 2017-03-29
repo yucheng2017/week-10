@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ListKeeper</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid header">
+    <div class="row">
+      <div class="container">
+        <h1>ListKeeper</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-sm-3 sidebar">
+      <h4>Your Lists</h4>
+      <div class="list-group" id="lists">
+        <a class="list-group-item list-group-item-action">
+          Books to Read
+        </a>
+        <a class="list-group-item list-group-item-action">
+          Movies to Watch
+        </a>
+        <a class="list-group-item list-group-item-action">
+          Places to Visit
+        </a>
+      </div>
+      <form>
+        <button type="button" id="add-list" class="btn btn-link">Add List</button>
+      </form>
+    </div>
+
+    <div class="col-sm-offset-1 col-sm-8">
+      <h4>List Items</h4>
+      <div class="list-group" id="list-items">
+        <a class="list-group-item list-group-item-action">
+          Hitchhiker's Guide to Galaxy
+        </a>
+        <a class="list-group-item list-group-item-action">
+          Walden
+        </a>
+        <a class="list-group-item list-group-item-action">
+        	The Elephant, the Tiger, and the Cell Phone
+        </a>
+      </div>
+      <form align="right">
+        <button type="button" id="add-item" class="btn btn-link">Add Item</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="add-list-popup">
+    <div class="container">
+      <span class="glyphicon glyphicon-remove close"></span>
+      <h1>Add List</h1>
+      <form class="form-group" id="add-list-form">
+        <label for="list-name-input">List Name</label>
+        <input type="text" class="form-control" id="list-name-input" aria-describedby="emailHelp" placeholder="ex. Things to do…">
+        <p align="right">
+          <br/>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <div id="add-item-popup">
+    <div class="container">
+      <span class="glyphicon glyphicon-remove close"></span>
+      <h1>Add List Item</h1>
+      <form class="form-group" id="add-list-form">
+        <label for="list-name-input">Item Name</label>
+        <input type="text" class="form-control" id="list-name-input" aria-describedby="emailHelp" placeholder="ex. Things to do…">
+        <p align="right">
+          <br/>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </p>
+      </form>
+    </div>
+  </div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="script.js" type="text/javascript"></script>
+
+</body>
+</html>
