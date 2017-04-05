@@ -43,3 +43,46 @@ a.list-group-item-action:hover {
   cursor: pointer;
   float: right;
 }
+
+#add-list-popup {
+  z-index: 999;
+  background-color: rgba(100, 100, 100, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#add-list-popup div.container {
+  padding: 20px;
+  background-color: rgba(230, 230, 230, 1);
+  flex: 0.33333;
+  height: 33.33vh;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.8);
+}
+
+#add-item-popup {
+   z-index: 999;
+  background-color: rgba(100, 100, 100, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#add-item-popup div.container {
+  padding:20px;
+  background-color: rgba(230,230,230,1);
+  flex: :0.33333;
+  height: 33.33vh;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.8);
+}
